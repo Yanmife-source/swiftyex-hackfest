@@ -2,3 +2,6 @@
 svenv/
 
 .env
+
+__pycache__/
+*.pyc
