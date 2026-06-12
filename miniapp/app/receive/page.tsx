@@ -5,8 +5,8 @@ export default function ReceivePage() {
     <div className="flex flex-col gap-6 px-4 pt-6">
       <h1 className="text-lg font-semibold text-foreground">Receive</h1>
       <div className="flex flex-col items-center justify-center py-12 text-center">
-        <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-emerald-500/10">
-          <Receipt className="h-8 w-8 text-emerald-400" />
+        <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-white">
+          <Receipt className="h-8 w-8 text-black" />
         </div>
         <h2 className="text-base font-semibold text-foreground">
           Receive Assets

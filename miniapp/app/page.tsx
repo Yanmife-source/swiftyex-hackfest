@@ -8,7 +8,7 @@ export default function WalletPage() {
       <div className="flex items-center justify-between">
         <h1 className="text-lg font-semibold text-foreground">SwiftyEx</h1>
         <div className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-violet-500 to-purple-600 text-xs font-bold text-white">
+          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white text-xs font-bold text-black">
             S
           </div>
         </div>

@@ -82,9 +82,9 @@ const transactions: Transaction[] = [
 ]
 
 const statusColors = {
-  completed: "text-emerald-400",
-  pending: "text-amber-400",
-  failed: "text-red-400",
+  completed: "text-foreground",
+  pending: "text-muted-foreground",
+  failed: "text-destructive",
 }
 
 const typeIcons = {
@@ -101,7 +101,7 @@ export function TokenList() {
           key={token.symbol}
           className="flex w-full items-center gap-3 rounded-xl px-4 py-3 text-left transition-colors hover:bg-surface-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
         >
-          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-violet-500 to-purple-600 font-mono text-sm font-bold text-white">
+          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white font-mono text-sm font-bold text-black">
             {token.icon}
           </div>
           <div className="flex-1 min-w-0">
@@ -114,8 +114,8 @@ export function TokenList() {
                   className={cn(
                     "text-xs font-medium",
                     token.change24h && token.change24h > 0
-                      ? "text-emerald-400"
-                      : "text-red-400",
+                      ? "text-foreground"
+                      : "text-destructive",
                   )}
                 >
                   {token.change24h && token.change24h > 0 ? "+" : ""}
@@ -151,10 +151,10 @@ export function TokenList() {
                 className={cn(
                   "flex h-9 w-9 shrink-0 items-center justify-center rounded-full",
                   tx.type === "received"
-                    ? "bg-emerald-500/10 text-emerald-400"
+                    ? "bg-white text-black"
                     : tx.type === "sent"
-                      ? "bg-red-500/10 text-red-400"
-                      : "bg-blue-500/10 text-blue-400",
+                      ? "bg-surface text-muted-foreground"
+                      : "bg-secondary text-foreground",
                 )}
               >
                 <Icon className="h-4 w-4" />
